@@ -175,3 +175,8 @@ replace github.com/opendatahub-io/opendatahub-operator/pkg/scoperules => ./pkg/s
 replace github.com/opendatahub-io/odh-platform-utilities => github.com/opendatahub-io/odh-platform-utilities v0.5.0
 
 exclude github.com/openshift/api v3.9.0+incompatible
+
+// TODO(RHAI-21655): local replace for verification only; remove and bump to
+// the released framework tag (framework/v0.4.1) once the odh-platform-utilities
+// PR providing WithPreviousFieldOwners is merged and tagged.
+replace github.com/opendatahub-io/odh-platform-utilities/framework => ../odh-platform-utilities/framework
